@@ -1,0 +1,12 @@
+.bundle
+.bundle/*
+www/js/bower_components
+www/styles/imports.less
+www/styles/dev.css
+www/styles/app.css
+*node_modules*
+/build/*
+/www/dist
+/dist/*
+tmp/*
+tmp/**/*
