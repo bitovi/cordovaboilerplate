@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.mycordova.client-demo"
+        version="{{version}}"
+        xmlns="http://www.w3.org/ns/widgets"
+        xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>myCordova</name>
+    <description>
+      Cordova example mobile client application
+    </description>
+    <author email="hurgleburgler@gmail.com.com" href="http://www.bitovi.com">
+      Cordova example application
+    </author>
+    <content src="{{mobileMain}}" />
+    <access origin="*" />
+    <config-file platform="ios" parent="NSLocationAlwaysUsageDescription" overwrite="true">
+    </config-file>
+    <feature name="Camera">
+      <param name="ios-package" value="CDVCamera" />
+    </feature>
+    <preference name="StatusBarOverlaysWebView" value="false"/>
+    <preference name="StatusBarBackgroundColor" value="#000000"/>
+    <preference name="StatusBarStyle" value="lightcontent" />
+    <icon src="www/img/icons/ios/Icon.png" />
+    <platform name="android">
+      <!-- you can use any density that exists in the Android project -->
+      <splash src="www/img/splash-green.png" density="land-hdpi"/>
+      <splash src="www/img/splash-green.png" density="land-ldpi"/>
+      <splash src="www/img/splash-green.png" density="land-mdpi"/>
+      <splash src="www/img/splash-green.png" density="land-xhdpi"/>
+
+      <splash src="www/img/splash-green.png" density="port-hdpi"/>
+      <splash src="www/img/splash-green.png" density="port-ldpi"/>
+      <splash src="www/img/splash-green.png" density="port-mdpi"/>
+      <splash src="www/img/splash-green.png" density="port-xhdpi"/>
+    </platform>
+    <platform name="ios">
+      <!-- images are determined by width and height. The following are supported -->
+      <icon src="www/img/icons/ios/Icon-72.png" width="72" height="72" />
+      <icon src="www/img/icons/ios/Icon-76.png" width="76" height="76" />
+      <icon src="www/img/icons/ios/Icon-60@2x.png" width="120" height="120" />
+      <icon src="www/img/icons/ios/Icon-76@2x.png" width="152" height="152" />
+
+      <splash src="www/img/splash-green.png" width="320" height="480"/>
+      <splash src="www/img/splash-green.png" width="640" height="960"/>
+      <splash src="www/img/splash-green.png" width="768" height="1024"/>
+      <splash src="www/img/splash-green.png" width="1536" height="2048"/>
+      <splash src="www/img/splash-green.png" width="1024" height="768"/>
+      <splash src="www/img/splash-green.png" width="2048" height="1536"/>
+      <splash src="www/img/splash-green.png" width="640" height="1136"/>
+      <splash src="www/img/splash-green.png" width="750" height="1334"/>
+      <splash src="www/img/splash-green.png" width="1242" height="2208"/>
+      <splash src="www/img/splash-green.png" width="2208" height="1242"/>
+    </platform>
+</widget>

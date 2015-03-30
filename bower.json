@@ -1,0 +1,11 @@
+{
+  "name": "Cordova Demo",
+  "version": "0.0.1",
+  "dependencies": {
+    "jquery": "~2.1.3",
+    "steal": "bitovi/steal#minor"
+  },
+  "resolutions": {
+    "jquery": "~2.1.3"
+  }
+}
