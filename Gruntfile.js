@@ -10,8 +10,8 @@ module.exports = function (grunt) {
 
     grunt.config.init({
 
-        appMain: grunt.option("app-main") || "production.html",
-        mobileMain: grunt.option("mobile-main") || "production-mobile.html",
+        appMain: grunt.option("app-main") || "index.html",
+        mobileMain: grunt.option("mobile-main") || "mobile.html",
         cordovaPath: "./build/cordova",
         cordovacli: {
             options: {
@@ -215,6 +215,16 @@ module.exports = function (grunt) {
         },
 
         pkg: pkg,
+        connect: {
+            server: {
+                options: {
+                    port: grunt.option("port") || 8125,
+                    debug: true,
+                    base: 'www',
+                    hostname: '0.0.0.0'
+                }
+            }
+        }
     });
 
     grunt.loadNpmTasks("grunt-contrib-connect");
@@ -260,6 +270,6 @@ module.exports = function (grunt) {
                                /*'copy:dev',*/
                                'cordovacli:ios']);
     grunt.registerTask('design', ['less_imports', 'less:dev', 'watch:design']);
-    grunt.registerTask('serve', ['configureProxies:server', 'connect:server', 'design']);
+    grunt.registerTask('serve', ['connect:server', 'design']);
     grunt.registerTask('test', ['build']);
 };
