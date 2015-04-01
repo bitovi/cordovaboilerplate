@@ -43,7 +43,7 @@ export ANDROID_HOME=/usr/local/opt/android-sdk
 ```
 
 Once that's done, you need to launch `$ android` and install the SDK for
-`Android 4.4 (API 19)` through that interface, then run `$ android avd` and
+`Android 4.4 (API 21)` through that interface, then run `$ android avd` and
 create a single virtual device for emulation.
 
 See the
@@ -80,7 +80,7 @@ bower up
 To build a release the compiled versions of the application:
 
 ```bash
-grunt build [--no-{android,ios,web}]
+grunt build [{android,ios,web}]
 ```
 
 This will build the webapp and both mobile applications. The following files
@@ -98,10 +98,6 @@ Additionally, the following will be available under `build/` in the root:
 Both of the above are accessible through a symlink in `www/build`, so you can go
 to http://localhost:8125/build/release/production.html to try out the built
 application.
-
-The `--no-{android,ios,web}` options control which distribution packages to
-generate. For example, `--no-android --no-ios` will only generate
-`dist/myCordova.tgz`.
 
 ### Running on a device or emulator
 
