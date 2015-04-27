@@ -66,7 +66,7 @@ module.exports = function (grunt) {
                 }
             }
         },
-        stealBuild: {
+        "steal-build": {
             default: {
                 options: {
                     system: {
@@ -245,7 +245,7 @@ module.exports = function (grunt) {
         'clean:www',
         'less_imports',
         'less:dist',
-        'stealBuild',
+        'steal-build',
         'copy:index',
         'copy:static'
     ]);

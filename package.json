@@ -20,7 +20,7 @@
     "grunt-less-imports": "~0.9.1",
     "grunt-notify": "~0.3.0",
     "moment": "^2.9.0",
-    "steal-tools": "git://github.com/bitovi/steal-tools.git#minor",
+    "steal-tools": "~0.9.4",
     "sync-exec": "^0.4.0"
   },
   "scripts": {
